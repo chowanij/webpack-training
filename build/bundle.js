@@ -31830,10 +31830,9 @@
 	        key: 'render',
 	        value: function render() {
 	            debugger;
-	            var users = this.state.users.map(function (users, index) {
-	                var _user = user,
-	                    name = _user.name,
-	                    age = _user.age;
+	            var users = this.state.users.map(function (user, index) {
+	                var name = user.name,
+	                    age = user.age;
 
 	                return _react2.default.createElement(
 	                    'p',

@@ -20,7 +20,7 @@ export default class UsersComponent extends Component {
     
     render(){
         debugger;
-        const users = this.state.users.map((users, index) =>{
+        const users = this.state.users.map((user, index) =>{
             const {name, age} = user;
             return (<p key = {index}> {index} - {name} is {age} </p>);
         });
