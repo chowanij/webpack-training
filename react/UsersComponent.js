@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import api from '../api';
+import api from '../api.js';
 
 export default class UsersComponent extends Component {
 
@@ -11,16 +11,18 @@ export default class UsersComponent extends Component {
     }
 
     componentDidMount(){
-        const users = api.getUsers
+        debugger;
+        const users = api.getUsers();
         this.setState(
-            users
+           { users }
         );
     }
     
     render(){
+        debugger;
         const users = this.state.users.map((users, index) =>{
             const {name, age} = user;
-            return <p key = {index}> {index} - {name} is {age} </p>
+            return (<p key = {index}> {index} - {name} is {age} </p>);
         });
         return (
             <div> 

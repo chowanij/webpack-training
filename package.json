@@ -18,6 +18,7 @@
     "webpack": "webpack"
   },
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.7.1",
     "jquery": "^3.2.1",
